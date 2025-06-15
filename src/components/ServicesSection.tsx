@@ -53,7 +53,7 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-[#1a1725] to-[#272332] relative z-10">
+    <section className="py-24 bg-gradient-to-b from-[#1a1725] to-[#272332] relative z-10" id="services">
       <h2 className="text-4xl font-bold text-center mb-16 text-[#fffefc]">
         <span className="text-stroke">Nos Services</span>
         <div className="mt-4 h-1 w-24 bg-[#c29430] mx-auto animate-line-expand"></div>

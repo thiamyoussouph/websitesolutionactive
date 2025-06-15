@@ -4,7 +4,7 @@ export default function ContactSection() {
   return (
     <>
       {/* Bouton CTA flottant */}
-      <div className="fixed bottom-8 right-8 z-50">
+      <div className="fixed bottom-8 right-8 z-50" >
         <a
           href="/contact"
           className="cta-orbit flex items-center bg-[#c29430] text-[#272332] px-6 py-3 rounded-full 
@@ -21,7 +21,7 @@ export default function ContactSection() {
       </div>
 
       {/* Section Contact */}
-      <section className="relative bg-[#0F172A] py-24 text-white">
+      <section className="relative bg-[#0F172A] py-24 text-white" id="contact">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
