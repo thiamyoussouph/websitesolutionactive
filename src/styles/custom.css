@@ -1,0 +1,78 @@
+/* ========= CUSTOM STYLE POUR TON SITE ========= */
+
+/* Effets d’animation 3D sur cartes de service */
+.service-card-hologram {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(0) rotateY(0) translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.service-card-hologram:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(5deg) translateZ(20px);
+}
+
+/* Effet d’icône flottante */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Ligne de progression animée */
+.progress-line {
+  animation: progress 2s ease-out forwards;
+}
+@keyframes progress {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Titre avec effet de contour doré */
+.text-stroke {
+  -webkit-text-stroke: 2px #c29430;
+  text-stroke: 2px #c29430;
+  color: transparent;
+}
+
+/* Badge stylé en bas de carte */
+.badge-hologram {
+  background: linear-gradient(45deg, #c29430, transparent);
+  border: 1px solid #0e0f0f;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Amélioration pour indicateur de processus */
+.step-indicator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 120%;
+  width: 80px;
+  height: 2px;
+  background: #C29430;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.process-card:hover .step-indicator::after {
+  opacity: 0.3;
+}
+
+/* Effet animation fade in */
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Fin du custom.css */
