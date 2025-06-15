@@ -7,7 +7,9 @@ import Navbar from '../components/Navbar'
 export const metadata: Metadata = {
   title: 'Active Solution',
   description: 'Site officiel de l’agence Active Solution',
-}
+  icons: {
+    icon: '/logo.jpg', // ← chemin vers ton logo
+  },}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
